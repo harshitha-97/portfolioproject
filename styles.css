@@ -1,0 +1,221 @@
+ body {
+   background: white;
+   width: 100%;
+   font: 13px/1.6 "arial",verdana, sans-serif;
+   color: #666;
+   line-height: 21px;
+ }
+
+ h1,
+ h2,
+ h3 {
+   font-weight: normal;
+   font-size: 2em;
+   line-height: 1.2;
+   margin-top: 0px;
+   margin-bottom: .5rem;
+ }
+
+ /* Start styling for header area*/
+
+ header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ .container{
+   width: 100%;
+   display: flex;
+   position: relative;
+ }
+
+ .line {
+   border-bottom: solid 4px #7d97ad;
+   width: 100%;
+ }
+
+ .leftCol {
+   max-width: 100%;
+   float: left;
+   padding-bottom: 10px;
+ }
+
+ .rightCol {
+   max-width: 100%;
+   text-align: right;
+   float: right;
+ }
+
+ .name{
+   padding-bottom: 5px;
+   font-weight: normal;
+   text-transform: uppercase;
+   font-size: 4em;
+ }
+
+ .career{
+   font-size: 15px;
+   font-weight: normal;
+   line-height: 30px;
+   font-size: 2em;
+ }
+
+/* End styling for header area*/
+
+/* Start Styling for class= total*/
+
+ .boxes {
+    flex-direction: column;
+    float: left;
+    padding-left: 3em;
+    padding-right: 3em;
+    display: inline-block;
+ }
+
+ .total {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    line-height: 15px;
+ }
+
+ /* End styling for class= total*/
+
+ /* Start Styling for feature work*/
+
+ .heading {
+    text-transform: uppercase;
+    padding-left: 2em;
+    margin: 3rem 0;
+    width: 100%;
+    border-bottom: solid 2px #aaa;
+    font-weight: normal;
+    color: #7d97ad;
+ }
+
+ .container {
+   max-width: 980px;
+   margin: 0 auto;
+   padding: 0;
+ }
+
+ /* End styling for feature work*/
+
+ /* Start stylying for portfolio items*/
+
+ .items {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   background-color: white;
+ }
+
+ .portfolio-item {
+   width: 100%;
+   margin-bottom:4%;
+   text-align: center;
+   box-sizing: border-box;
+ }
+
+ .portfolio-item, .text_block {
+   line-height: 5px;
+  }
+
+ .portfolio-item img {
+   padding: 20px;
+   max-width: 100%;
+ }
+
+ .portfolio-item h2 {
+   font-size: 50px;
+   line-height: 20px;
+   font-family: monospace;
+   color: #444;
+ }
+
+ .text_block {
+   font-size: 25px;
+ }
+ /* End stylying for portfolio items*/
+
+ footer {
+   max-width:980px;
+   margin: 2px;
+   padding: 20px 20px;
+   font-size: 2em;
+ }
+
+ /*Media Queries are provided here*/
+
+ /*For devices with maximum width 640px */
+
+ @media screen and (max-width: 640px)  {
+
+    .leftCol {
+      padding-left: 4em;
+      padding-right: 10em;
+    }
+
+    .total {
+      font-size: 15px;
+      max-width: 100%;
+      flex-wrap: wrap;
+   }
+
+   .items {
+     font-size: 30px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+   }
+
+   .portfolio-item {
+     padding: 10px;
+     padding-left: 10px;
+   }
+ }
+
+ /*For devices with width up to 768px and 1024px*/
+
+ @media screen and (max-width: 768px) and (max-width: 1024px)  {
+
+   .appify {
+     order: 1;
+   }
+
+   .sunflower {
+     order: 2;
+   }
+
+   .bokeh {
+     order: 3;
+   }
+
+   .items, .total {
+     font-size: 15px;
+     padding-left: 1em;
+     padding-right: 2em;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+   }
+ }
+
+/*For devices with width up to  1200px*/
+
+ @media screen and (min-width: 1200px) {
+
+    .leftCol {
+      padding-right: 4em;
+    }
+
+    .boxes {
+      padding-right: 4em;
+    }
+
+    .appify, .sunflower, .bokeh {
+      width: 100%;
+      padding-right: 3em;
+    }
+  }
